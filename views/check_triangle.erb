@@ -1,0 +1,8 @@
+<% if @triangle.type == "Not a triangle" %>
+  <h4>Your triangle is not a triangle.</h4>
+<% elsif @triangle.type == "Scalene triangle" %>
+  <h4>Your triangle is a <%= @triangle.type %></h4>
+<% else %>
+  <h4>Your triangle is an <%= @triangle.type %></h4>
+<% end %>
+<p><a href="/">Check another triangle</a></p>
